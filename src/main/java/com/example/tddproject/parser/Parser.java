@@ -14,6 +14,8 @@ import java.util.logging.Logger;
 public class Parser {
 
 
+    private static final String FILE_PATH = "C:\\Users\\windows\\Desktop\\test.xml";
+
     public static void main(String[] args) {
 
         try {
@@ -22,7 +24,7 @@ public class Parser {
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser parser = factory.newSAXParser();
 
-            File file = new File("C:\\Users\\windows\\Desktop\\test.xml");
+            File file = new File(FILE_PATH);
             parser.parse(file,new HandlerBase());
         }catch(Exception exception){
            System.out.println(exception.getMessage());
