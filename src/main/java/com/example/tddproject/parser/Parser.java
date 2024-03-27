@@ -20,7 +20,7 @@ public class Parser {
             System.setProperty("javax.xml.parsers.SAXParserFactory", "com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl");
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser parser = factory.newSAXParser();
-            parser.setProperty(XMLConstants.ACCESS_EXTERNAL_DTD,"");
+
         }catch(Exception exception){
            System.out.println(exception.getMessage());
         }
